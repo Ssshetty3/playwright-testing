@@ -13,8 +13,10 @@ test('Home Page',async({page})=>{
 
 })
 
-test('jaya', async({page})=>{
-    
+test('practice', async({page})=>{
+    await page.goto("https://www.gmail.com/");
+    let title=await page.title();
+    console.log(title);
 })
 
 
